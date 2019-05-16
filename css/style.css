@@ -1,3 +1,176 @@
-.cv-layout {
-	display: grid;
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+
+a {
+    color: rgba(0, 0, 0, 0.87);
+    text-decoration: none;
+}
+
+a:hover {
+    color: blue;
+}
+
+p {
+    line-height: 1.5;
+    font-size: 13px;
+}
+
+a,
+.contact__info {
+    font-size: 13px;
+}
+
+p + p {
+    margin-top: 12px;
+}
+
+li {
+    font-size: 13px;
+    line-height: 1.3;
+    position: relative;
+    padding-left: 12px;
+}
+
+li:before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 0;
+    width: 1px;
+    height: 1px;    
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+li + li {
+    margin-top: 12px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: rgba(0, 0, 0, 0.87);
+    font-family: 'Source Sans Pro', sans-serif;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 300;
+    letter-spacing: 10px;
+}
+
+h3 {
+    padding-bottom: 13px;
+    margin-bottom: 20px;
+    font-size: 16px;    
+    letter-spacing: 5px;
+    position: relative;
+}
+
+h3:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 64px;
+    height: 1px;
+    border-bottom: 1px solid black;
+    background: #000;
+}
+
+h2 {
+    font-size: 16px;
+}
+
+h4 {
+    font-size: 16px;
+    opacity: .8;
+    margin-bottom: 6px;
+    margin-top: 18px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.resume {
+    padding-top: 12px;
+    padding-left: 32px;
+    padding-right: 24px;
+}
+
+.resoume__name {
+    text-align: center;
+    padding-top: 36px;
+    letter-spacing: 12px;
+}
+
+.resoume__position {
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-top: 1px solid #f1f1f1;
+    border-bottom: 1px solid #f1f1f1;
+    font-size: 24px;
+    margin: 12px;
+    margin-bottom: 0;
+    font-weight: 300;
+    letter-spacing: 12px;
+}
+
+.resume__block {
+    padding: 24px 0;
+}
+
+.resume__content {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.resume__sidebar {
+    width: 35%;
+    padding: 12px;
+}
+
+.contact {
+    display: flex;
+}
+
+.contact__icon {
+    width: 15px;
+    margin-right: 12px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact + .contact {
+    margin-top: 12px;
+}
+
+.resume__content main {
+    width: 65%;
+    padding: 12px;  
+    padding-right: 72px;  
+}
+
+.experience + .experience {
+    margin-top: 24px;
+}
+
+.experience__company {
+    opacity: .8;
+    font-size: 14px;
+}
+
+.experience__title {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 6px;
 }

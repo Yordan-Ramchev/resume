@@ -2,15 +2,199 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Source+Sans+Pro:300,400,600,700,900&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
 	<link rel="stylesheet" href="css/reset.css" type="text/css">
 	<link rel="stylesheet" href="css/style.css" type="text/css">
-	<title>CV</title>
+	<title>Personal resume</title>
 </head>
 <body>
-	<div class="page-wrapper">
-		<div class="cv-layout">
-			test
-		</div>
-	</div>
+	<section class="resume">
+        <header>
+            <div class="resume__block resoume__name" style="padding-bottom: 16px;">
+                <h1>
+                    <span class="bold">Yordan</span> Ramchev
+                </h1>
+            </div>
+            <div class="resume__block resoume__position">
+                <h2>
+                    Frontend web developer 
+                </h2>
+            </div>  
+        </header>
+        
+        <div class="resume__content">
+            <aside class="resume__sidebar">
+                <div class="resume__block contacts">
+                    <h3>
+                        contacts
+                    </h3>    
+                    <div class="contact">
+                        <div class="contact__icon">
+                            <i class="fas fa-mobile-alt"></i> 
+                        </div>
+                        <div class="contact__info">
+                            +359 877 780 200
+                        </div>
+                    </div>
+                    <div class="contact">
+                        <div class="contact__icon">
+                            <i class="far fa-envelope"></i>
+                        </div>
+                        <div class="contact__info">
+                        	<a href="mailto:Yordan.Ramchev@yahoo.com">
+                        		Yordan.Ramchev@yahoo.com
+                        	</a>
+                        </div>
+                    </div>   
+                    <div class="contact">
+                        <div class="contact__icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                        <div class="contact__info">
+                            <a href="">in/YordanRamchev</a>
+                        </div>
+                    </div>   
+                    <div class="contact">
+                        <div class="contact__icon">
+                            <i class="fab fa-stack-overflow"></i> 
+                        </div>
+                        <div class="contact__info">
+                            <a href="">Yordan Ramchev</a>
+                        </div>                        
+                    </div>        
+                </div>
+                <div class="resume__block education">
+                    <h3>
+                        education
+                    </h3>
+                    <p>
+                        Bachelor degree, <br>
+                        Computer systems and technologies <br>
+                        Technical University of Varna <br>
+                        2012-2017
+                    </p>
+                </div>
+                <div class="resume__block languages">
+                    <h3>
+                        languages
+                    </h3>
+
+                    <h4>BULGARIAN</h4>
+                    <p>
+                        native
+                    </p>
+                    <h4>ENGLISH</h4>
+                    <p>
+                        understanding - good <br>
+                        speaking - average <br>
+                        writing - average
+                    </p>
+                    <h4>RUSSIAN</h4>
+                    <p>
+                        understanding - good <br>
+                        speaking - basic <br>
+                        writing - basic
+                    </p>
+                </div>
+            </aside>
+
+            <main>
+                <div class="resume__block">
+                    <h3>
+                        Professional experience
+                    </h3>
+                    
+                    <div class="experience">
+                        <div class="experience__title">
+                            FRONTEND WEB DEVELOPER
+                        </div>
+                        <div class="experience__company">
+                            Webnotize Ltd, Varna | August 2017 - present
+                        </div>  
+                        <br>
+                        <div class="experience__description">
+                            <p style="font-size: 12px;">
+                                The main focus of my work is developing Web Applications for small and medium-sized businesses. 
+Another aspect I am involved in is making e-commerce Web Applications. The primary technologies 
+associated with my responsibilities are HTML, Sass/LESS, jQuery, Vue.js. They are all used in the context of
+Laravel projects. In the past I have also been involved in developing projects based on Joomla.
+An interesting project I have recently been working on would be a Laravel Preset used for optimizing our 
+frontend workload.
+                            </p>
+                            <p style="padding-bottom: 6px;font-size: 12px;">
+                               A key clients' projects I have worked on and key skills acquired: 
+                            </p>
+                            <ul>
+                                <li>
+									Energo pro - Creating views, adding new features to existing
+projects using jQuery, Vue.js and templates for contracts.
+                                </li>
+                                <li>
+									Maritime administration - Implemented vue.js schedule module
+for pilots.
+                                </li>
+                                <li>
+                                	Glenhawk - Front-end development using HTML,
+CSS, backed by jQuery. Acquired experience in 
+multinational environment and remote development practices
+                                </li>
+                            </ul>
+                        </div>  
+                    </div>
+
+                    <div class="experience">
+                        <div class="experience__title">
+                            FREELANCE FRONTEND DEVELOPER
+                        </div>
+                        <div class="experience__company">
+                            FREELANCE | September 2017 - December 2017
+                        </div>
+                        <br>  
+                        <div class="experience__description">
+                        	<p>
+                        		Creating templates from PSD files.
+                        	</p>
+                        </div>  
+                    </div>
+
+                    <div class="experience">
+                        <div class="experience__title">
+                            INTERN FRONTEND DEVELOPER
+                        </div>
+                        <div class="experience__company">
+                            Enlapse Technology, Varna | April 2014 - July 2014
+                        </div>  
+                    </div>
+                </div>
+                <div class="resume__block skills" style="padding-top: 0">
+                    <h3>
+                        Professional skills 
+                    </h3>
+                    <h4>Coding</h4>
+                    <p style="font-size: 12px">
+                        HTML (Bootstrap, Foundation, Bulma) <br>
+                        CSS (SCSS, LESS) <br>
+                        JavaScript (Vue.js, jQuery, AJAX) <br>
+                        Git (Gitlab, Bitbucket, Github)<br>
+                    </p>
+                    <h4>Design</h4>
+                    <p style="font-size: 12px">
+                    	Adobe Photoshop <br>
+	                    Sketch <br>
+	                    Zeplin
+                    </p>
+	                    
+
+                    <h4>Project management</h4>
+                    <p style="font-size: 12px">
+                    	Jira
+                    </p> 
+                </div>
+            </main>
+        </div>
+        
+        
+    </section>
 </body>
 </html>
