@@ -1,51 +1,57 @@
 html {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
 }
 
 a {
-    color: rgba(0, 0, 0, 0.87);
-    text-decoration: none;
+  color: rgba(0, 0, 0, 0.95);
+  text-decoration: none;
 }
 
 a:hover {
-    color: blue;
+  color: blue;
 }
 
 p {
-    line-height: 1.5;
-    font-size: 13px;
+  line-height: 1.5;
+  font-size: 12px;
 }
 
-a,
-.contact__info {
-    font-size: 13px;
+a {
+  font-size: 12px;
 }
 
-p + p {
-    margin-top: 12px;
+p + p,
+ul + h5 {
+  margin-top: 12px;
 }
 
 li {
-    font-size: 13px;
-    line-height: 1.3;
-    position: relative;
-    padding-left: 12px;
+  font-size: 12px;
+  line-height: 1.3;
+  position: relative;
+  padding-left: 12px;
+}
+
+h5 {
+  font-weight: bold;
+  margin-bottom: 6px;
+  font-size: 12px;
 }
 
 li:before {
-    content: '';
-    position: absolute;
-    top: 6px;
-    left: 0;
-    width: 1px;
-    height: 1px;    
-    border-radius: 50%;
-    border: 2px solid black;
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 0;
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  border: 2px solid black;
 }
 
 li + li {
-    margin-top: 12px;
+  margin-top: 12px;
 }
 
 h1,
@@ -53,124 +59,222 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-    color: rgba(0, 0, 0, 0.87);
-    font-family: 'Source Sans Pro', sans-serif;
-    text-transform: uppercase;
+h6,
+h4 > a {
+  color: rgba(0, 0, 0, 0.95);
+  font-family: "Source Sans Pro", sans-serif;
+  text-transform: uppercase;
 }
 
 h1 {
-    font-size: 32px;
-    font-weight: 300;
-    letter-spacing: 10px;
+  font-size: 32px;
+  font-weight: 300;
+  letter-spacing: 10px;
 }
 
 h3 {
-    padding-bottom: 13px;
-    margin-bottom: 20px;
-    font-size: 16px;    
-    letter-spacing: 5px;
-    position: relative;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  letter-spacing: 5px;
+  position: relative;
 }
 
 h3:before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    display: block;
-    width: 64px;
-    height: 1px;
-    border-bottom: 1px solid black;
-    background: #000;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 64px;
+  height: 1px;
+  border-bottom: 1px solid black;
+  background: #000;
 }
 
 h2 {
-    font-size: 16px;
+  font-size: 16px;
 }
 
-h4 {
-    font-size: 16px;
-    opacity: .8;
-    margin-bottom: 6px;
-    margin-top: 18px;
+h4,
+h4 > a {
+  font-size: 16px;
+  opacity: 0.95;
+  margin-bottom: 6px;
+  margin-top: 18px;
 }
 
 .bold {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .resume {
-    padding-top: 12px;
-    padding-left: 32px;
-    padding-right: 24px;
+  padding-top: 12px;
+  padding-left: 32px;
+  padding-right: 24px;
 }
 
 .resoume__name {
-    text-align: center;
-    padding-top: 36px;
-    letter-spacing: 12px;
-}
-
-.resoume__position {
-    text-align: center;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    border-top: 1px solid #f1f1f1;
-    border-bottom: 1px solid #f1f1f1;
-    font-size: 24px;
-    margin: 12px;
-    margin-bottom: 0;
-    font-weight: 300;
-    letter-spacing: 12px;
+  text-align: center;
+  padding-top: 36px;
+  letter-spacing: 12px;
 }
 
 .resume__block {
-    padding: 24px 0;
+  padding: 24px 0;
 }
 
 .resume__content {
-    display: flex;
-    flex-direction: row-reverse;
+  display: flex;
+  align-items: flex-start;
 }
 
-.resume__sidebar {
-    width: 35%;
-    padding: 12px;
+.resume__content > div:first-child {
+  padding-right: 32px;
+  margin-right: 32px;
+  border-right: 1px solid #f1f1f1;
+  width: 25%;
+}
+
+.resume__content > div:last-child {
+  width: 75%;
+}
+
+.contacts {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-top: 1px solid #f1f1f1;
+  border-bottom: 1px solid #f1f1f1;
+  margin: 12px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact {
-    display: flex;
+  display: flex;
+  align-items: center;
 }
 
 .contact__icon {
-    width: 15px;
-    margin-right: 12px;
-    display: flex;
-    justify-content: center;
+  font-size: 12px;
+  margin-right: 8px;
+  display: flex;
+  justify-content: center;
+}
+
+.contact__info {
+  font-size: 12px;
 }
 
 .contact + .contact {
-    margin-top: 12px;
+  margin-left: 20px;
 }
 
 .resume__content main {
-    width: 65%;
-    padding: 12px;  
-    padding-right: 72px;  
+  width: 50%;
+  padding: 12px 24px 0 0;
 }
 
 .experience + .experience {
-    margin-top: 24px;
+  margin-top: 12px;
 }
 
-.experience__company {
-    opacity: .8;
-    font-size: 14px;
+.experience__position,
+.experience__duration {
+  font-size: 12px;
+  margin-top: 0;
+}
+
+.experience__duration {
+  opacity: 0.7;
+}
+
+.experience__item {
+  position: relative;
+  padding-left: 24px;
+}
+
+.experience__item + .experience__item {
+  margin-top: 16px;
 }
 
 .experience__title {
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-bottom: 6px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+  margin-top: 24px;
+}
+
+/* skills */
+.skills {
+  margin-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.skill_list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0;
+  list-style-type: none;
+}
+
+.skill__item:before {
+  display: none;
+}
+
+.skill__item {
+  line-height: 1.5;
+  margin: 0;
+  padding: 6px 12px;
+  background-color: #f1f1f1;
+}
+
+.experience__item:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 8px;
+  bottom: 0;
+  width: 7px;
+  height: 7px;
+  border-radius: 100%;
+  /* background: #dedede; */
+
+  background: #cbcbcb;
+}
+
+.experience__item:after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 11px;
+  bottom: 0;
+  width: 1px;
+  height: calc(100% + 3px);
+  background: #ebebeb;
+}
+
+.experience__item:last-child:after {
+  display: none;
+}
+
+.experience__description ul {
+  margin-top: 6px;
+  margin-left: 12px;
+}
+.experience__description li + li {
+  margin-top: 4px;
+}
+
+.experience .skill_list {
+  margin-left: 0;
+  margin-top: 8px;
+}
+
+.experience__description li.skill__item + li.skill__item {
+  margin-top: 0;
 }
