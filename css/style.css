@@ -5,7 +5,7 @@ html {
 
 a {
   color: rgba(0, 0, 0, 0.95);
-  text-decoration: none;
+  /* text-decoration: none; */
 }
 
 a:hover {
@@ -22,7 +22,8 @@ a {
 }
 
 p + p,
-ul + h5 {
+ul + h5,
+p + h5 {
   margin-top: 12px;
 }
 
@@ -130,14 +131,14 @@ h4 > a {
 }
 
 .resume__content > div:first-child {
-  padding-right: 32px;
-  margin-right: 32px;
-  border-right: 1px solid #f1f1f1;
   width: 25%;
 }
 
 .resume__content > div:last-child {
   width: 75%;
+  padding-left: 32px;
+  margin-left: 32px;
+  border-left: 1px solid #f1f1f1;
 }
 
 .contacts {
@@ -209,8 +210,8 @@ h4 > a {
 
 /* skills */
 .skills {
-  margin-top: 24px;
-  padding-bottom: 24px;
+  margin-top: 12px;
+  padding-bottom: 12px;
   border-bottom: 1px solid #f1f1f1;
 }
 
