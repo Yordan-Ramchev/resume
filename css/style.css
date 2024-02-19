@@ -3,6 +3,10 @@ html {
   font-size: 15px;
 }
 
+img {
+  width: 100%;
+}
+
 a {
   color: rgba(0, 0, 0, 0.95);
   /* text-decoration: none; */
@@ -123,6 +127,26 @@ h4 > a {
 
 .resume__block {
   padding: 24px 0;
+}
+
+.resume__block + .resume__block {
+  padding-top: 0;
+}
+
+.resume__block--certificates {
+  padding: 24px 0;
+
+  li {
+    padding-left: 0;
+  }
+
+  li + li {
+    margin-top: 24px;
+  }
+
+  li:before {
+    display: none;
+  }
 }
 
 .resume__content {
