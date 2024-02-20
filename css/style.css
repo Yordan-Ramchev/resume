@@ -129,7 +129,7 @@ h4 > a {
   padding: 24px 0;
 }
 
-.resume__block + .resume__block {
+.resume__content .resume__block + .resume__block {
   padding-top: 0;
 }
 
